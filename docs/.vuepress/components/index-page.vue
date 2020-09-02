@@ -32,11 +32,11 @@
       <p>使用 Yvue-UI 做什么</p>
       <div class="advantage">
         <div class="tips">
-          <yv-icon name="yule"></yv-icon>
+          <i class="iconfont icon-yule"></i>
           <p>自娱自乐，自我提升</p>
         </div>
         <div class="tips">
-          <yv-icon name="layout"></yv-icon>
+          <i class="iconfont icon-layout"></i>
           <p>可定制更多组件内容</p>
         </div>
       </div>
@@ -46,17 +46,14 @@
 </template>
 
 <script>
-import YvIcon from '../../../src/components/Icon'
 
 export default {
-  name: 'indexPage',
-  components: {
-    YvIcon
-  }
+  name: 'indexPage'
 }
 </script>
 
 <style scoped lang="scss">
+@import "index-page.css";
 .icon {
   width: 2.6em;
   height: 2.6em;
@@ -88,8 +85,7 @@ export default {
       .menu {
         display: inline-flex;
         ul {
-          margin: 0;
-          margin-left: 20px;
+          margin: 0 0 0 20px;
           list-style: none;
           display: flex;
           padding: 0;

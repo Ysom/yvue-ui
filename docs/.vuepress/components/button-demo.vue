@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import YvButton from '../../../src/components/Button'
-import YvButtonGroup from '../../../src/components/ButtonGroup'
+import Button from '../../../src/components/Button'
+import ButtonGroup from '../../../src/components/ButtonGroup'
 
 export default {
   name: "button-demo",
   components: {
-    YvButton,
-    YvButtonGroup
+    YvButton: Button,
+    YvButtonGroup: ButtonGroup
   },
   data() {
     return {

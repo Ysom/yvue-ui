@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import YvButton from './components/Button'
-import YvButtonGroup from './components/ButtonGroup'
+import Button from './components/Button'
+import ButtonGroup from './components/ButtonGroup'
 
-Vue.component('YvButton', YvButton);
-Vue.component('YvButtonGroup', YvButtonGroup)
+Vue.component('YvButton', Button);
+Vue.component('YvButtonGroup', ButtonGroup)
 
 new Vue({
   el: '#app',
@@ -20,4 +20,4 @@ new Vue({
       }, 1000)
     }
   }
-});
+})
