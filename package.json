@@ -1,0 +1,32 @@
+{
+  "name": "yvue-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "ysom",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.5.4"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.esm.js"
+  }
+}

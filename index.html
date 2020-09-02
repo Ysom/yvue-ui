@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>yvue-ui</title>
+  <link rel="stylesheet" href="./src/styles/common.css">
+</head>
+<body>
+  <div id="app">
+    <yv-button icon="search">左icon</yv-button>
+    <yv-button icon-position="right" icon="download">右icon</yv-button>
+    <yv-button :loading="loading" @click="handleClick">加载按钮</yv-button>
+    <yv-button :disabled="true">禁止按钮</yv-button>
+    <yv-button-group>
+      <yv-button>上一步</yv-button>
+      <yv-button>1</yv-button>
+      <yv-button>下一步</yv-button>
+    </yv-button-group>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+</html>
