@@ -1,0 +1,26 @@
+$bg-purple: #d3dce6;
+$bg-purple-light: #e5e9f2;
+$border-radius: 4px;
+
+.yv-row{
+  margin: 10px 0;
+}
+.yv-col{
+  min-height: 36px;
+  text-align: center;
+  line-height: 36px;
+  &:nth-child(odd){
+    background-color: $bg-purple;
+  }
+  &:nth-child(even){
+    background-color: $bg-purple-light;
+  }
+  &:first-child{
+    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+  &:last-child{
+    border-bottom-right-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}
