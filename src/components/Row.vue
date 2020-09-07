@@ -13,7 +13,7 @@
     name: "YvRow",
     props: {
       gutter: [String, Number],
-      margin: {
+      align: {
         type: String,
         validator(value) {
           return ['left', 'center', 'right'].includes(value)
