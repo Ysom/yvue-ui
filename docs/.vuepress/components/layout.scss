@@ -1,0 +1,38 @@
+$bg-purple: #d3dce6;
+$bg-purple-light: #e5e9f2;
+$border-radius: 4px;
+* {
+  box-sizing: border-box;
+}
+.yv-row{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.yv-col {
+  .col-child {
+    min-height: 36px;
+    line-height: 36px;
+  }
+  &:nth-child(odd){
+    .col-child {
+      background-color: $bg-purple;
+    }
+  }
+  &:nth-child(even){
+    .col-child {
+      background-color: $bg-purple-light;
+    }
+  }
+  &:first-child{
+    .col-child {
+      border-bottom-left-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+  }
+  &:last-child{
+    .col-child {
+      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+}
