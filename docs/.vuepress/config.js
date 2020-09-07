@@ -1,5 +1,8 @@
 module.exports = {
   title: "Yvue UI",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   description: "vue2.0 vue组件",
   base: "/yvue-ui/",
   lastUpdated: "Last Updated",
