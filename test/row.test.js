@@ -7,10 +7,10 @@ Vue.config.productionTip = false
 Vue.config.devtools = false
 
 describe('Row', () => {
-  it('Row存在 ', function () {
+  it('Row存在 ', () => {
     expect(Row).to.be.ok
   })
-  it('可以接收gutter ', function (done) {
+  it('可以接收gutter ', (done) => {
     Vue.component('yv-row', Row)
     Vue.component('yv-col', Col)
     const div = document.createElement('div')
@@ -35,5 +35,19 @@ describe('Row', () => {
       vm.$el.remove()
       vm.$destroy()
     })
+  })
+  it('可以接收align ', () => {
+    const div = document.createElement('div')
+    document.body.appendChild(div)
+    const Constructor = Vue.extend(Row)
+    const vm = new Constructor({
+      propsData: {
+        align: 'left'
+      }
+    }).$mount(div)
+    const rowElement = vm.$el
+    expect(getComputedStyle(rowElement).justifyContent).to.be.eq('flex-start')
+    vm.$el.remove()
+    vm.$destroy()
   })
 })
