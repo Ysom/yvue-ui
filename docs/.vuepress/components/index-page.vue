@@ -6,7 +6,7 @@
           <i class="iconfont icon-lightning2"></i>
           <ul>
             <li><a href="https://github.com/Ysom/yvue-ui" target="_blank">GitHub</a></li>
-            <li><a href="https://ysom.github.io/yvue-ui/introduce/">Document</a></li>
+            <li><a href="https://ysom.github.io/yvue-ui/get-start/">Document</a></li>
             <li><a href="https://ysom.github.io/yvue-ui-blog" target="_blank">Blog</a></li>
           </ul>
         </div>

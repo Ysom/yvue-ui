@@ -11,7 +11,6 @@ module.exports = {
     smoothScroll: true,
     nav: [],
     sidebar: [
-      '/introduce/',
       {
         title: '入门',
         children: [
