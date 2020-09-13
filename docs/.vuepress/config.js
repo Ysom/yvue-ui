@@ -23,7 +23,8 @@ module.exports = {
         title: '组件',
         children: [
           './components/button.md',
-          './components/layout.md'
+          './components/layout.md',
+          './components/container.md'
         ]
       }
     ]
