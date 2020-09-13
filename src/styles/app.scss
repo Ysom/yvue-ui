@@ -2,6 +2,13 @@ $bg-purple: #d3dce6;
 $bg-purple-light: #e5e9f2;
 $border-radius: 4px;
 
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .yv-row{
   margin: 10px 0;
 }
@@ -31,4 +38,24 @@ $border-radius: 4px;
       border-top-right-radius: $border-radius;
     }
   }
+}
+
+.yv-header, .yv-footer {
+  background-color: #b3c0d1;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.yv-main {
+  background-color: #e9eef3;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+.yv-aside {
+  background-color: #d3dce6;
+  width: 120px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
 }
