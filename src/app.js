@@ -8,6 +8,11 @@ import Header from './components/Header'
 import Aside from './components/Aside'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import Tabs from './components/Tabs'
+import TabsHead from './components/TabsHead'
+import TabsItem from './components/TabsItem'
+import TabsBody from './components/TabsBody'
+import TabsPane from './components/TabsPane'
 
 Vue.component('YvButton', Button);
 Vue.component('YvButtonGroup', ButtonGroup)
@@ -18,6 +23,11 @@ Vue.component('YvHeader', Header)
 Vue.component('YvAside', Aside)
 Vue.component('YvMain', Main)
 Vue.component('YvFooter', Footer)
+Vue.component('YvTabs', Tabs)
+Vue.component('YvTabsHead', TabsHead)
+Vue.component('YvTabsItem', TabsItem)
+Vue.component('YvTabsBody', TabsBody)
+Vue.component('YvTabsPane', TabsPane)
 
 new Vue({
   el: '#app',

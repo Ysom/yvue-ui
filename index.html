@@ -44,6 +44,18 @@
       </yv-container>
       <yv-footer>footer</yv-footer>
     </yv-container>
+    <yv-tabs class="mt-20" selected="tabs1">
+      <yv-tabs-head>
+        <yv-tabs-item name="tabs1">绿皮书v3</yv-tabs-item>
+        <yv-tabs-item name="tabs2">红宝书v4</yv-tabs-item>
+        <yv-tabs-item name="tabs" :disabled="true">经典待上市</yv-tabs-item>
+      </yv-tabs-head>
+
+      <yv-tabs-body>
+        <yv-tabs-pane name="tabs1">语言精髓与编程实践</yv-tabs-pane>
+        <yv-tabs-pane name="tabs2">高级程序设计</yv-tabs-pane>
+      </yv-tabs-body>
+    </yv-tabs>
   </div>
   <script src="./src/app.js"></script>
 </body>
