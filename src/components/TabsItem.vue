@@ -53,18 +53,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$tab-item-current-color: #337480;
 $tab-item-color: #333;
 .yv-tabs-item{
   display: flex;
   align-items: center;
   padding: .4em 1em;
   flex-shrink: 0;
-  font-weight: bold;
   color: $tab-item-color;
   cursor: pointer;
   &.current-tabs-item{
-    color: $tab-item-current-color;
     font-weight: bold;
     vertical-align: top;
   }

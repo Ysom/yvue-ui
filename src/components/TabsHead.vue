@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$tab-item-current-color:#337480;
+$tab-item-current-color: #296aef;
 $tab-height:40px;
 $head-border:#ddd;
 .yv-tabs-head{
