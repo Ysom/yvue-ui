@@ -23,7 +23,8 @@ module.exports = {
         children: [
           './components/button.md',
           './components/layout.md',
-          './components/container.md'
+          './components/container.md',
+          './components/tabs.md'
         ]
       }
     ]
