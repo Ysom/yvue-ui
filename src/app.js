@@ -13,6 +13,7 @@ import TabsHead from './components/TabsHead'
 import TabsItem from './components/TabsItem'
 import TabsBody from './components/TabsBody'
 import TabsPane from './components/TabsPane'
+import Toast from './components/plugin';
 
 Vue.component('YvButton', Button);
 Vue.component('YvButtonGroup', ButtonGroup)
@@ -29,6 +30,8 @@ Vue.component('YvTabsItem', TabsItem)
 Vue.component('YvTabsBody', TabsBody)
 Vue.component('YvTabsPane', TabsPane)
 
+Vue.use(Toast)
+
 new Vue({
   el: '#app',
   data() {
@@ -42,6 +45,19 @@ new Vue({
       setTimeout(() => {
         this.loading = false
       }, 1000)
+    },
+    handleToast() {
+      this.$toast({
+        message: `0-10000随机数： ${Math.floor(Math.random() * 10000)}`,
+        closeButton: {
+          text: '关闭',
+          callback() {
+            console.log('close toast')
+          }
+        },
+        autoClose: 3,
+        position: 'top'
+      })
     }
   }
 })
