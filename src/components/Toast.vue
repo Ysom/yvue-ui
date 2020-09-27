@@ -11,12 +11,12 @@
           v-html='$slots.default[0]'
         ></div>
       </div>
-      <div class="line" ref="line"></div>
+      <div class="line" ref="line" v-if="closeButton.text"></div>
       <span
         class="close"
-        v-if="closeButton"
+        v-if="closeButton.text"
         @click="handleClose"
-      >{{ this.closeButton.text }}</span>
+      >{{ closeButton.text }}</span>
     </div>
   </div>
 </template>
@@ -39,12 +39,7 @@
       closeButton: {
         type: Object,
         default() {
-          return {
-            text:'关闭',
-            callback:() => {
-              this.close()
-            }
-          }
+          return {}
         }
       },
       autoClose: {
@@ -71,9 +66,11 @@
     },
     methods: {
       updateStyle() {
-        this.$nextTick(() => {
-          this.$refs.line.style.height = `${this.$refs.toast.getBoundingClientRect().height}px`
-        })
+        if (this.closeButton.text) {
+          this.$nextTick(() => {
+            this.$refs.line.style.height = `${this.$refs.toast.getBoundingClientRect().height}px`
+          })
+        }
       },
       onAutoClose() {
         if (this.autoClose) {
@@ -125,12 +122,13 @@
 
   .wrapper {
     position: fixed;
+    z-index: 9999;
     &.toast-position-top {
       left: 50%;
       top: 10px;
       transform: translateX(-50%);
       .yv-toast {
-        animation: pushToast-top .5s;
+        animation: pushToast-top .3s;
       }
     }
     &.toast-position-right {
@@ -138,7 +136,7 @@
       top: 50%;
       transform: translateY(-50%);
       .yv-toast {
-        animation: pushToast-right .5s;
+        animation: pushToast-right .3s;
       }
     }
     &.toast-position-bottom {
@@ -146,7 +144,7 @@
       left: 50%;
       transform: translateX(-50%);
       .yv-toast {
-        animation: pushToast-bottom .5s;
+        animation: pushToast-bottom .3s;
       }
     }
     &.toast-position-left {
@@ -154,13 +152,13 @@
       top: 50%;
       transform: translateY(-50%);
       .yv-toast {
-        animation: pushToast-left .5s;
+        animation: pushToast-left .3s;
       }
     }
     &.toast-position-middle {
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       .yv-toast{
         animation: pushToast-middle 1s;
       }
