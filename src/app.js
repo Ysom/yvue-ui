@@ -13,7 +13,8 @@ import TabsHead from './components/TabsHead'
 import TabsItem from './components/TabsItem'
 import TabsBody from './components/TabsBody'
 import TabsPane from './components/TabsPane'
-import Toast from './components/plugin';
+import Toast from './components/plugin'
+import Popover from './components/Popover'
 
 Vue.component('YvButton', Button);
 Vue.component('YvButtonGroup', ButtonGroup)
@@ -29,6 +30,7 @@ Vue.component('YvTabsHead', TabsHead)
 Vue.component('YvTabsItem', TabsItem)
 Vue.component('YvTabsBody', TabsBody)
 Vue.component('YvTabsPane', TabsPane)
+Vue.component('YvPopover', Popover)
 
 Vue.use(Toast)
 

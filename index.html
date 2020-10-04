@@ -57,6 +57,14 @@
       </yv-tabs-body>
     </yv-tabs>
     <yv-button :loading="loading" @click="handleToast">弹出提示</yv-button>
+    <yv-popover trigger="click">
+      <p slot="content">需要展示的文案</p>
+      <yv-button>click展示</yv-button>
+    </yv-popover>
+    <yv-popover trigger="hover">
+      <p slot="content">需要展示的文案</p>
+      <yv-button>hover展示</yv-button>
+    </yv-popover>
   </div>
   <script src="./src/app.js"></script>
 </body>
