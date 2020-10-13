@@ -15,6 +15,8 @@ import TabsBody from './components/TabsBody'
 import TabsPane from './components/TabsPane'
 import Toast from './components/plugin'
 import Popover from './components/Popover'
+import Collapse from './components/Collapse'
+import CollapseItem from './components/CollapseItem'
 
 Vue.component('YvButton', Button);
 Vue.component('YvButtonGroup', ButtonGroup)
@@ -31,6 +33,8 @@ Vue.component('YvTabsItem', TabsItem)
 Vue.component('YvTabsBody', TabsBody)
 Vue.component('YvTabsPane', TabsPane)
 Vue.component('YvPopover', Popover)
+Vue.component('YvCollapse', Collapse)
+Vue.component('YvCollapseItem', CollapseItem)
 
 Vue.use(Toast)
 
@@ -38,7 +42,8 @@ new Vue({
   el: '#app',
   data() {
     return {
-      loading: false
+      loading: false,
+      selects: ['1', '2']
     }
   },
   methods: {

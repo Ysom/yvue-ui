@@ -65,6 +65,14 @@
       <p slot="content">需要展示的文案</p>
       <yv-button>hover展示</yv-button>
     </yv-popover>
+    <yv-collapse class="mt-20" :selected.sync="selects">
+      <yv-collapse-item title="第一趴" name="1">
+        这是第一趴的内容
+      </yv-collapse-item>
+      <yv-collapse-item title="第二趴" name="2">
+        这是第二趴的内容
+      </yv-collapse-item>
+    </yv-collapse>
   </div>
   <script src="./src/app.js"></script>
 </body>
