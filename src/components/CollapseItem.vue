@@ -1,6 +1,6 @@
 <template>
-  <div class='yv-collapse-item' @click="toggle">
-    <div class="title">
+  <div class='yv-collapse-item'>
+    <div class="title" @click="toggle">
       {{ title }}
     </div>
     <div class="content" v-if="open">
