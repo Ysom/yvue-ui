@@ -73,6 +73,20 @@
         这是第二趴的内容
       </yv-collapse-item>
     </yv-collapse>
+
+    <div class="slides-con mt-20">
+      <yv-carousel :selected.sync="selectSlide">
+        <yv-carousel-item
+          v-for="item in slidesList"
+          :key="item.id"
+          :name="item.id+''"
+        >
+          <div class="flex-center item-con">
+            {{item.text}}
+          </div>
+        </yv-carousel-item>
+      </yv-carousel>
+    </div>
   </div>
   <script src="./src/app.js"></script>
 </body>

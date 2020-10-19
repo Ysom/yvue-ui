@@ -9,6 +9,12 @@ $border-radius: 4px;
   margin-bottom: 20px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .yv-row{
   margin: 10px 0;
 }
@@ -58,4 +64,12 @@ $border-radius: 4px;
   height: 300px;
   line-height: 300px;
   text-align: center;
+}
+
+.slides-con {
+  border: 1px solid #999;
+  border-radius: 4px;
+  .item-con {
+    height: 200px;
+  }
 }

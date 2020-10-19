@@ -17,6 +17,8 @@ import Toast from './components/plugin'
 import Popover from './components/Popover'
 import Collapse from './components/Collapse'
 import CollapseItem from './components/CollapseItem'
+import Carousel from './components/Carousel'
+import CarouselItem from './components/CarouselItem'
 
 Vue.component('YvButton', Button);
 Vue.component('YvButtonGroup', ButtonGroup)
@@ -35,6 +37,8 @@ Vue.component('YvTabsPane', TabsPane)
 Vue.component('YvPopover', Popover)
 Vue.component('YvCollapse', Collapse)
 Vue.component('YvCollapseItem', CollapseItem)
+Vue.component('YvCarousel', Carousel)
+Vue.component('YvCarouselItem', CarouselItem)
 
 Vue.use(Toast)
 
@@ -43,7 +47,22 @@ new Vue({
   data() {
     return {
       loading: false,
-      selects: ['1', '2']
+      selects: ['1', '2'],
+      slidesList: [
+        {
+          id: 1,
+          text: '第一个'
+        },
+        {
+          id: 2,
+          text: '第二个'
+        },
+        {
+          id: 3,
+          text: '第三个'
+        }
+      ],
+      selectSlide: '1'
     }
   },
   methods: {
