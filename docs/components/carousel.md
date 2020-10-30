@@ -1,9 +1,9 @@
 ---
-title: Carousel - 走马灯
+title: Carousel - 轮播
 sidebarDepth: 2
 ---
 
-# 走马灯
+# 轮播
 
 ## 示例
 
@@ -94,9 +94,9 @@ export default {
 
 | 参数        | 说明 | 类型 | 可选值 | 默认值  |
 |------------|-----|-----|-------|--------|
-| `selected`     | 选中的走马灯，用`.sync`绑定 | string| -- | -- |
+| `selected`     | 选中的轮播，用`.sync`绑定 | string| -- | -- |
 | `autoPlay`    | 是否自动轮播 | boolean | true/false | true |
-| `autoPlayDelay` | 轮播的时长，毫秒 | number | -- | 3000 |
+| `autoPlayDelay` | 轮播的时长，单位为毫秒 | number | -- | 3000 |
 
 ## CarouselItem Attributes
 
