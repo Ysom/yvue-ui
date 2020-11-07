@@ -87,6 +87,14 @@
         </yv-carousel-item>
       </yv-carousel>
     </div>
+
+    <div class="mt-20">
+      <yv-pagination
+        :total-page="10"
+        :current-page.sync="currentPage"
+        @update="onPageChange"
+      ></yv-pagination>
+    </div>
   </div>
   <script src="./src/app.js"></script>
 </body>

@@ -19,6 +19,7 @@ import Collapse from './components/Collapse'
 import CollapseItem from './components/CollapseItem'
 import Carousel from './components/Carousel'
 import CarouselItem from './components/CarouselItem'
+import Pagination from './components/Pagination'
 
 Vue.component('YvButton', Button);
 Vue.component('YvButtonGroup', ButtonGroup)
@@ -39,6 +40,7 @@ Vue.component('YvCollapse', Collapse)
 Vue.component('YvCollapseItem', CollapseItem)
 Vue.component('YvCarousel', Carousel)
 Vue.component('YvCarouselItem', CarouselItem)
+Vue.component('YvPagination', Pagination)
 
 Vue.use(Toast)
 
@@ -62,7 +64,8 @@ new Vue({
           text: '第三个'
         }
       ],
-      selectSlide: '1'
+      selectSlide: '1',
+      currentPage: 5
     }
   },
   methods: {
@@ -84,6 +87,9 @@ new Vue({
         autoClose: 3,
         position: 'top'
       })
+    },
+    onPageChange(page) {
+      this.currentPage = page
     }
   }
 })
