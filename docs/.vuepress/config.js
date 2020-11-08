@@ -28,7 +28,8 @@ module.exports = {
           './components/toast.md',
           './components/popover.md',
           './components/collapse.md',
-          './components/carousel.md'
+          './components/carousel.md',
+          './components/pagination.md'
         ]
       }
     ]
