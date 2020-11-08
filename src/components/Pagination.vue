@@ -72,7 +72,8 @@ export default {
   methods: {
     onClickPage (n) {
       if (n >= 1 && n <= this.totalPage) {
-        this.$emit('update:currentPage', n)
+        // this.$emit('update:currentPage', n)
+        this.$emit('change', n)
       }
     }
   }
