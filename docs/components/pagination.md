@@ -42,5 +42,5 @@ sidebarDepth: 2
 | 参数        | 说明 | 类型 | 可选值 | 默认值  |
 |------------|-----|-----|-------|--------|
 | `total-page`     | 总页数 | number| -- | -- |
-| `current-page`    | 当前页数 | number | -- | -- |
+| `current-page`    | 当前页码，可使用.sync | number | -- | -- |
 | `hideIfOnePage` | 当页数只有一页的时候，是否隐藏分页器 | boolean | false/true | true |
