@@ -26,8 +26,9 @@
 import Icon from './Icon'
 
 function unique (array) {
+  // ES6
   // return [...new Set(array)]
-  // array = [1 1 2 3 4 5 20]
+
   const object = {}
   array.map((number) => {
     object[number] = true
@@ -55,7 +56,7 @@ export default {
     }
   },
   computed: {
-    pages() { // 依赖了 totalPage 和 currentPage
+    pages() {
       return unique([1, this.totalPage,
         this.currentPage,
         this.currentPage - 1, this.currentPage - 2,
@@ -72,7 +73,7 @@ export default {
   methods: {
     onClickPage (n) {
       if (n >= 1 && n <= this.totalPage) {
-        // this.$emit('update:currentPage', n)
+        this.$emit('update:currentPage', n)
         this.$emit('change', n)
       }
     }
