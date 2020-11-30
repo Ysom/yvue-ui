@@ -21,26 +21,32 @@ import Carousel from './components/Carousel'
 import CarouselItem from './components/CarouselItem'
 import Pagination from './components/Pagination'
 
-Vue.component('YvButton', Button);
-Vue.component('YvButtonGroup', ButtonGroup)
-Vue.component('YvRow', Row)
-Vue.component('YvCol', Col)
-Vue.component('YvContainer', Container)
-Vue.component('YvHeader', Header)
-Vue.component('YvAside', Aside)
-Vue.component('YvMain', Main)
-Vue.component('YvFooter', Footer)
-Vue.component('YvTabs', Tabs)
-Vue.component('YvTabsHead', TabsHead)
-Vue.component('YvTabsItem', TabsItem)
-Vue.component('YvTabsBody', TabsBody)
-Vue.component('YvTabsPane', TabsPane)
-Vue.component('YvPopover', Popover)
-Vue.component('YvCollapse', Collapse)
-Vue.component('YvCollapseItem', CollapseItem)
-Vue.component('YvCarousel', Carousel)
-Vue.component('YvCarouselItem', CarouselItem)
-Vue.component('YvPagination', Pagination)
+const components = [
+  Button,
+  ButtonGroup,
+  Row,
+  Col,
+  Container,
+  Header,
+  Aside,
+  Main,
+  Footer,
+  Tabs,
+  TabsHead,
+  TabsItem,
+  TabsBody,
+  TabsPane,
+  Popover,
+  Collapse,
+  CollapseItem,
+  Carousel,
+  CarouselItem,
+  Pagination
+]
+
+components.forEach(component => {
+  Vue.component(component.name, component)
+})
 
 Vue.use(Toast)
 
