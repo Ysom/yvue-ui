@@ -37,7 +37,7 @@ function unique (array) {
 }
 
 export default {
-  name: "Pagination",
+  name: "YvPagination",
   components: {
     YvIcon: Icon
   },
