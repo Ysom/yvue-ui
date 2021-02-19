@@ -1,5 +1,5 @@
 ---
-title: popover - 弹出框
+title: Popover - 弹出框
 sidebarDepth: 2
 ---
 

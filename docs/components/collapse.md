@@ -1,5 +1,5 @@
 ---
-title: collapse - 折叠面板
+title: Collapse - 折叠面板
 sidebarDepth: 2
 ---
 

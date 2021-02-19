@@ -1,5 +1,5 @@
 ---
-title: toast - 提示框
+title: Toast - 提示框
 sidebarDepth: 2
 ---
 

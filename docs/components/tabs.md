@@ -1,5 +1,5 @@
 ---
-title: tabs - 标签页
+title: Tabs - 标签页
 sidebarDepth: 2
 ---
 
