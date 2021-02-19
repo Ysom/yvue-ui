@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  import YvIcon from './Icon'
+  import YvIcon from '../icon/Icon'
   export default {
     name: "YvButton",
     components: {
@@ -49,7 +49,7 @@
 </script>
 
 <style scoped lang="scss">
-@import '../styles/button.scss';
+@import '../../styles/button';
 
 .yv-button {
   border: 1px solid $border-color;

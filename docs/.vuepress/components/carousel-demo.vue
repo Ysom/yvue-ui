@@ -43,8 +43,8 @@
 </template>
 
 <script>
-  import Carousel from '../../../src/components/Carousel'
-  import CarouselItem from '../../../src/components/CarouselItem'
+  import Carousel from '../../../src/components/carousel/Carousel'
+  import CarouselItem from '../../../src/components/carousel/CarouselItem'
   export default {
     name: "carousel-demo",
     components: {

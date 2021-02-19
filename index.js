@@ -1,3 +1,3 @@
-import YvButton from './src/components/Button'
+import YvButton from './src/components/button/Button'
 
 export { YvButton }

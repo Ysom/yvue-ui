@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import Popover from '../../../src/components/Popover'
-import Button from '../../../src/components/Button'
+import Popover from '../../../src/components/popover/Popover'
+import Button from '../../../src/components/button/Button'
 export default {
   name: "popover-demo",
   components: {

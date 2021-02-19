@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Icon from './Icon'
+import Icon from '../icon/Icon'
 
 function unique (array) {
   // ES6
@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../styles/pagination";
+@import "../../styles/pagination";
 
 .yv-pagination {
   display: flex;

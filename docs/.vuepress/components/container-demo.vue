@@ -38,11 +38,11 @@
 </template>
 
 <script>
-import Container from "../../../src/components/Container"
-import Header from "../../../src/components/Header"
-import Aside from "../../../src/components/Aside"
-import Main from "../../../src/components/Main"
-import Footer from "../../../src/components/Footer"
+import Container from "../../../src/components/container/Container"
+import Header from "../../../src/components/container/Header"
+import Aside from "../../../src/components/container/Aside"
+import Main from "../../../src/components/container/Main"
+import Footer from "../../../src/components/container/Footer"
 export default {
   name: "container-demo",
   components: {

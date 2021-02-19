@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import Button from '../../../src/components/Button'
-import ButtonGroup from '../../../src/components/ButtonGroup'
+import Button from '../../../src/components/button/Button'
+import ButtonGroup from '../../../src/components/button/ButtonGroup'
 
 export default {
   name: "button-demo",

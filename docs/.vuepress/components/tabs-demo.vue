@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import YvTabs from "../../../src/components/Tabs";
-import YvTabsHead from "../../../src/components/TabsHead";
-import YvTabsItem from "../../../src/components/TabsItem";
-import YvTabsBody from "../../../src/components/TabsBody";
-import YvTabsPane from "../../../src/components/TabsPane";
+import YvTabs from "../../../src/components/tabs/Tabs";
+import YvTabsHead from "../../../src/components/tabs/TabsHead";
+import YvTabsItem from "../../../src/components/tabs/TabsItem";
+import YvTabsBody from "../../../src/components/tabs/TabsBody";
+import YvTabsPane from "../../../src/components/tabs/TabsPane";
 
 export default {
   name: "tabs-demo",

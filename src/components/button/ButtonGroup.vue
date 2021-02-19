@@ -11,7 +11,7 @@
 </script>
 
 <style scoped lang="scss">
-@import '../styles/button';
+@import '../../styles/button';
 
 .yv-button-group {
   display: inline-flex;

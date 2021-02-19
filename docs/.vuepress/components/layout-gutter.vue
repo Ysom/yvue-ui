@@ -14,8 +14,8 @@
 </template>
 
 <script>
-  import Row from '../../../src/components/Row'
-  import Col from '../../../src/components/Col'
+  import Row from '../../../src/components/layout/Row'
+  import Col from '../../../src/components/layout/Col'
   export default {
     name: "layout-gutter",
     components: {

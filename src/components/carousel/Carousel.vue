@@ -31,7 +31,7 @@
 </template>
 
 <script>
-  import YvIcon from './icon'
+  import YvIcon from '../icon/Icon'
 
   export default {
     name: "YvCarousel",

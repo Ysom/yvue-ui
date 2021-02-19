@@ -11,7 +11,7 @@
 
 <script>
   import Vue from 'vue'
-  import Button from '../../../src/components/Button'
+  import Button from '../../../src/components/button/Button'
   import plugin from '../../../src/components/plugin'
   Vue.use(plugin)
 

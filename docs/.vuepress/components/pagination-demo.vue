@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Pagination from '../../../src/components/Pagination'
+import Pagination from '../../../src/components/pagination/Pagination'
 
 export default {
   name: "pagination-demo",
