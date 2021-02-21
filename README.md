@@ -8,13 +8,13 @@
 
 ### Install
 
-> Tips：使用时请确保 box-sizing 设置为 border-box
-
-`npm install @yuqigui1083/yvue-ui --save`
+``` shell script
+npm install @yuqigui1083/yvue-ui --save
+```
 
 ### Quick Start
 
-组件无需全局引入，支持按需引入，减小代码体积
+组件只支持**按需引入**，减小代码体积；使用时请确保 `box-sizing` 设置为 `border-box`，且需全局引入样式文件。
 
 ```vue
 <script>
