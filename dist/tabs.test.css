@@ -1,0 +1,42 @@
+.yv-tabs-head[data-v-02944d] {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 40px;
+}
+.yv-tabs-head .actions[data-v-02944d] {
+  margin-left: auto;
+}
+.yv-tabs-head > .title-wrapper[data-v-02944d] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.yv-tabs-head > .title-wrapper > .line[data-v-02944d] {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 3px solid #296aef;
+  transition: all 0.3s linear;
+}
+.yv-tabs-item[data-v-0dff73] {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 1em;
+  flex-shrink: 0;
+  color: #333;
+  cursor: pointer;
+}
+.yv-tabs-item.current-tabs-item[data-v-0dff73] {
+  font-weight: bold;
+  vertical-align: top;
+}
+.yv-tabs-item.tabs-item-disabled[data-v-0dff73] {
+  color: #999;
+  cursor: not-allowed;
+}
+.current-tabs-pane[data-v-21f4c1] {
+  padding: 1em;
+}

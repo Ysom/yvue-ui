@@ -1,0 +1,59 @@
+.icon[data-v-d7939e] {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.2em;
+}
+@keyframes spin-data-v-0ed49d {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+.yv-button[data-v-0ed49d] {
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 0 1em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 32px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.yv-button[data-v-0ed49d]:active {
+  background-color: #eee;
+}
+.yv-button[data-v-0ed49d]:hover {
+  border: 1px solid #666;
+}
+.yv-button[data-v-0ed49d]:focus {
+  outline: none;
+}
+.yv-button > .icon[data-v-0ed49d] {
+  order: 1;
+  margin-right: 0.3em;
+}
+.yv-button > .button-content[data-v-0ed49d] {
+  order: 2;
+}
+.yv-button.icon-right > .button-content[data-v-0ed49d] {
+  order: 1;
+}
+.yv-button.icon-right > .icon[data-v-0ed49d] {
+  order: 2;
+  margin-left: 0.3rem;
+  margin-right: 0;
+}
+.yv-button.disabled[data-v-0ed49d], .yv-button.disabled[data-v-0ed49d]:focus, .yv-button.disabled[data-v-0ed49d]:hover {
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+.yv-button .loading[data-v-0ed49d] {
+  animation: spin-data-v-0ed49d 1s infinite linear;
+}

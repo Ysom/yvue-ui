@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>yvue-ui</title>
+  <link rel="stylesheet" href="/common.25f6c222.css">
+  <link rel="stylesheet" href="/app.d4f9d21c.css">
+<script src="/common.25f6c222.js"></script><script src="/app.d4f9d21c.js"></script><link rel="stylesheet" href="/app.a6a4d504.css"></head>
+<body>
+  <div id="app">
+    <yv-button icon="search">左icon</yv-button>
+    <yv-button icon-position="right" icon="download">右icon</yv-button>
+    <yv-button :loading="loading" @click="handleClick">加载按钮</yv-button>
+    <yv-button :disabled="true">禁止按钮</yv-button>
+    <yv-button-group>
+      <yv-button>上一步</yv-button>
+      <yv-button>1</yv-button>
+      <yv-button>下一步</yv-button>
+    </yv-button-group>
+    <yv-row>
+      <yv-col span="12"><div class="col-demo">12</div></yv-col>
+      <yv-col span="12"><div class="col-demo">12</div></yv-col>
+    </yv-row>
+    <yv-row>
+      <yv-col span="6"><div class="col-demo">6</div></yv-col>
+      <yv-col span="10"><div class="col-demo">10</div></yv-col>
+      <yv-col span="8"><div class="col-demo">8</div></yv-col>
+    </yv-row>
+    <yv-row gutter="10">
+      <yv-col span="6"><div class="col-demo">6</div></yv-col>
+      <yv-col span="10"><div class="col-demo">10</div></yv-col>
+      <yv-col span="8"><div class="col-demo">8</div></yv-col>
+    </yv-row>
+    <yv-container>
+      <yv-header>header</yv-header>
+      <yv-main>main</yv-main>
+      <yv-footer>footer</yv-footer>
+    </yv-container>
+    <yv-container class="mt-20">
+      <yv-header>header</yv-header>
+      <yv-container>
+        <yv-aside>aside</yv-aside>
+        <yv-main>main</yv-main>
+      </yv-container>
+      <yv-footer>footer</yv-footer>
+    </yv-container>
+    <yv-tabs class="mt-20" selected="tabs1">
+      <yv-tabs-head>
+        <yv-tabs-item name="tabs1">绿皮书v3</yv-tabs-item>
+        <yv-tabs-item name="tabs2">红宝书v4</yv-tabs-item>
+        <yv-tabs-item name="tabs" :disabled="true">经典待上市</yv-tabs-item>
+      </yv-tabs-head>
+
+      <yv-tabs-body>
+        <yv-tabs-pane name="tabs1">语言精髓与编程实践</yv-tabs-pane>
+        <yv-tabs-pane name="tabs2">高级程序设计</yv-tabs-pane>
+      </yv-tabs-body>
+    </yv-tabs>
+    <yv-button :loading="loading" @click="handleToast">弹出提示</yv-button>
+    <yv-popover trigger="click">
+      <p slot="content">需要展示的文案</p>
+      <yv-button>click展示</yv-button>
+    </yv-popover>
+    <yv-popover trigger="hover">
+      <p slot="content">需要展示的文案</p>
+      <yv-button>hover展示</yv-button>
+    </yv-popover>
+    <yv-collapse class="mt-20" :selected.sync="selects">
+      <yv-collapse-item title="第一趴" name="1">
+        这是第一趴的内容
+      </yv-collapse-item>
+      <yv-collapse-item title="第二趴" name="2">
+        这是第二趴的内容
+      </yv-collapse-item>
+    </yv-collapse>
+
+    <div class="slides-con mt-20">
+      <yv-carousel :selected.sync="selectSlide">
+        <yv-carousel-item v-for="item in slidesList" :key="item.id" :name="item.id+''">
+          <div class="flex-center item-con">
+            {{item.text}}
+          </div>
+        </yv-carousel-item>
+      </yv-carousel>
+    </div>
+
+    <div class="mt-20">
+      <yv-pagination :total-page="10" :current-page="currentPage" @change="onPageChange"></yv-pagination>
+    </div>
+  </div>
+  <script src="/app.a6a4d504.js"></script>
+</body>
+</html>

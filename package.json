@@ -1,13 +1,18 @@
 {
-  "name": "yvue-ui",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@yuqigui1083/yvue-ui",
+  "version": "1.0.1",
+  "description": "一款基于vue2的清新组件库",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "dev-test": "parcel watch test/* --no-cache & karma start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.js --no-cache --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ysom/yvue-ui.git"
   },
   "keywords": [
     "vue",
@@ -15,6 +20,10 @@
   ],
   "author": "ysom",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ysom/yvue-ui/issues"
+  },
+  "homepage": "https://github.com/Ysom/yvue-ui#readme",
   "dependencies": {
     "chai": "^4.2.0",
     "karma": "^5.2.1",

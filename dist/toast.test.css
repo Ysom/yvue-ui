@@ -1,0 +1,115 @@
+@keyframes pushToast-top-data-v-dd5301 {
+0% {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes pushToast-bottom-data-v-dd5301 {
+0% {
+    opacity: 0;
+    transform: translateY(100%);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes pushToast-middle-data-v-dd5301 {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes pushToast-left-data-v-dd5301 {
+0% {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes pushToast-right-data-v-dd5301 {
+0% {
+    opacity: 0;
+    transform: translateX(100%);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+.wrapper[data-v-dd5301] {
+  position: fixed;
+  z-index: 9999;
+}
+.wrapper.toast-position-top[data-v-dd5301] {
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.wrapper.toast-position-top .yv-toast[data-v-dd5301] {
+  animation: pushToast-top-data-v-dd5301 0.3s;
+}
+.wrapper.toast-position-right[data-v-dd5301] {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper.toast-position-right .yv-toast[data-v-dd5301] {
+  animation: pushToast-right-data-v-dd5301 0.3s;
+}
+.wrapper.toast-position-bottom[data-v-dd5301] {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrapper.toast-position-bottom .yv-toast[data-v-dd5301] {
+  animation: pushToast-bottom-data-v-dd5301 0.3s;
+}
+.wrapper.toast-position-left[data-v-dd5301] {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper.toast-position-left .yv-toast[data-v-dd5301] {
+  animation: pushToast-left-data-v-dd5301 0.3s;
+}
+.wrapper.toast-position-middle[data-v-dd5301] {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper.toast-position-middle .yv-toast[data-v-dd5301] {
+  animation: pushToast-middle-data-v-dd5301 1s;
+}
+.yv-toast[data-v-dd5301] {
+  border-radius: 4px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: white;
+}
+.yv-toast .message[data-v-dd5301] {
+  padding: 8px 0;
+}
+.yv-toast .line[data-v-dd5301] {
+  margin: 0 1.5em;
+  border-left: 1px solid white;
+  height: 100%;
+}
+.yv-toast .close[data-v-dd5301] {
+  flex-shrink: 0;
+}
