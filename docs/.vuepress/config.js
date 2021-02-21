@@ -14,7 +14,6 @@ module.exports = {
       {
         title: '入门',
         children: [
-          '/install/',
           '/get-start/',
         ]
       },
